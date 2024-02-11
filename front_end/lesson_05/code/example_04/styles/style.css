@@ -1,0 +1,9 @@
+.bgimg {
+    width: 50%;
+    height: 734px;
+    background-image: url("../images/cats.jpg");
+    background-repeat: no-repeat;
+    background-color: yellow;
+    background-size: 100% 100%;
+    background-position: center;
+}
