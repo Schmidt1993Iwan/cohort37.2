@@ -1,3 +1,4 @@
+const thirthItemElem = document.querySelector('#input-field');
 const secondItemElem = document.querySelector('#input-field');
 const inputElement = document.querySelector('#input-field');
 // console.log(inputElement);
@@ -13,8 +14,8 @@ inputElement.addEventListener('input', inputFieldInput);
 const createButtonElement = document.querySelector('button.btn');
 
 const submitButtonHandler = (evt) => {
-    // console.log(evt);
-    testTextElement.textContent = 'Тест контент';
+    console.log(evt);
+    testTextElement.textContent = userInput;
 }
 
 createButtonElement.addEventListener('click', submitButtonHandler);

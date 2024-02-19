@@ -2,7 +2,7 @@ body {
     font-family: DejaVu Sans Mono, monospace; /*https://www.w3.org/Style/Examples/007/fonts.ru.html*/
     margin: 0;
     padding: 0;
-    background-color: rgb(102, 80, 80);
+    background-color: rgb(188, 240, 105);
   }
   
   .title {
@@ -13,10 +13,10 @@ body {
   .container {
     max-width: 500px;
     margin: 50px;
-    background-color: #9c9797;
+    background-color: #5dacd4;
     padding: 50px;
     border-radius: 15px;
-    box-shadow: 19px 12px 30px 11px #a81515; /* https://webcode.tools/css-generator/box-shadow#google_vignette */
+    box-shadow: 19px 12px 30px 11px #7972fa; /* https://webcode.tools/css-generator/box-shadow#google_vignette */
   }
   
   #bmi-form {
