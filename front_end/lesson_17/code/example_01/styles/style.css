@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    height: 100vh; /*высота всего экрана*/
+    background-color: bisque;
+    display: grid; /*сообщаем браузеру, что будет сетка*/
+    grid-template-rows: 200px 100px 1fr 1fr 1fr 200px; /*какие только строки будут?*/
+    grid-template-columns: 1fr; /*колонны*/
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "aside"
+    "article"
+    "footer"
+    ;
+}
+
+@media screen and (min-width:768px){
+    .main-container {
+    grid-template-rows: 200px 100px 1fr 1fr 200px; /*какие только строки будут?*/
+    grid-template-columns: 3fr 1fr; /*колонны*/
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section aside"
+    "article aside"
+    "footer footer"
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+nav{
+    background-color: lightgreen;
+    grid-area: nav;
+
+}
+
+.grid-section{
+grid-area: section;
+display: grid;
+background-color: darkmagenta;
+grid-template-columns: repeat(4, 100px); /*1fr 1fr 1fr 1fr*/
+grid-template-rows: repeat(4, 100px); 
+justify-items: center;
+align-items: center;
+column-gap: 10px;
+justify-content: space-around;
+align-content: space-around;
+}
+
+.card{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+
+
+.grid-article{
+grid-area: article;
+background-color: red
+}
+
+.grid-aside{
+grid-area: aside;
+background-color: mediumspringgreen;
+}
+
+
+
+footer {
+background-color: turquoise;
+grid-area: footer;
+}

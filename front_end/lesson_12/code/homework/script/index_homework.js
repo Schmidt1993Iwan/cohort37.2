@@ -52,3 +52,11 @@ function displayBMIRes(bmi) {
     //находим bmi-condition и вызываем textContent для отображения на странице
     document.getElementById('bmi-condition').textContent = 'Состояние: ' + res;
 }
+
+// Euro-Dollar= 1.08
+//Euro-GBP= 0.86
+//Dollar-Euro = 0.928
+//Dollar-GBP = 0.794
+//GBP-Euro = 1.17
+//GBP-Dollar = 1.26
+
